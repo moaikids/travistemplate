@@ -1,7 +1,7 @@
 language: ruby
-sudo: false
-#services:
-#- docker
+#sudo: false
+services:
+- docker
 before_install:
 - pip install awscli docker-compose
 script:
