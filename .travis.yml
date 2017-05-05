@@ -1,17 +1,9 @@
 language: ruby
-rvm:
-- 2.3.3
-cache:
-  directories:
-  - vendor/bundle
-  - $HOME/.cache/pip
-  - $HOME/.cache/docker/image
-bundler_args: "--without production --deployment"
 sudo: false
-services:
-- docker
+#services:
+#- docker
 before_install:
 - pip install awscli docker-compose
 script:
-- docker --version
+- sudo docker --version
 
